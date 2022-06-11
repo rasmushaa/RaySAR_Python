@@ -21,7 +21,7 @@ def main(argv):
         data = json.load(json_file)
         
     for settings in data:
-        if settings['fileName'] == "PLANE": #argv[1]:
+        if settings['fileName'] == argv[1]:
 
             print("\nParameters from:\n" + settings['fileName'] + " selected\n")
             pprint.pprint(settings)
